@@ -19,7 +19,7 @@ background-repeat: no-repeat;
 }
 
 
-@media (max-width:320px){
+@media (max-width:480px){
 
 .wrapper {
 	max-width: 90%;
