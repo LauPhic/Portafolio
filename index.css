@@ -1,0 +1,493 @@
+
+
+	
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+    font-family: 'Meow Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+	
+background-image: url("imagenes/baja/fondo.jpg");
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+	
+}
+
+@media only screen and (max-width: 480px) {
+.wrapper {
+	
+	max-width: 90%;
+	margin: 0 auto;
+	overflow: hidden; /*[ hidden | clip | scroll | auto ] */
+}
+
+header {
+	
+	padding: 10px 0; /* [ El área de relleno de un elemento es el espacio entre su contenido y su borde. ] */
+}
+
+.logo {
+	float: left; /*none | left | right | inline-star | inline-end */
+	margin-left: 50px;
+}
+
+.logo img {
+	width: 80px;
+}
+
+
+
+nav {
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 8px 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+ nav ul li a:hover {
+	color: aqua;
+	transition: all .3s;
+	
+}
+
+
+
+
+
+.hero {
+	padding: 50px 0;
+	text-align: center;
+	align-items: center;
+}
+
+.hero h1 {
+	font-size: 80px;
+	line-height: 1; 
+	color: #75EFFF;
+	margin-bottom: 20px;
+	font-family: 'Meow Script', cursive;
+	margin-top:80px;
+	
+}
+
+
+
+.fondofoto {
+	
+	padding-top: 20%;
+
+
+}
+
+.fondofoto img {
+	
+	  width: 70%; 
+
+	}
+	
+.saludo {
+	position: absolute;
+	margin: -60% 0 0 5%;
+
+
+}
+
+.saludo img {
+	
+	  width: 60%; 
+
+	}
+	
+
+
+.bigideal{
+	position: absolute;
+	margin: 15% 0 0 15%;
+	display: flex;
+	align-items: center;
+}
+
+.bigideal p {
+	text-shadow: 2px 2px 4px #353535;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: left;
+	line-height: 1.3;
+	font-family: 'Poppins', sans-serif;
+	
+}
+	
+	.circulo1 {
+	
+position: absolute;
+margin: -20% 0 0 40%;
+animation: girar 10s linear infinite; 
+
+}
+
+.circulo1 img {
+	
+	  width: 50%; 
+	
+
+}
+/*
+.hero a {
+	display: inline-block;
+	padding: 8px 10px;
+	text-decoration: none;
+}
+
+
+.scroll{
+	position: absolute;
+	max-width: 100%; 
+	height: auto; 
+	right: 20px;
+	top: 500px;
+
+		
+}
+
+.scroll img{
+	
+  max-width: 60%;	
+  animation: loop-animation 2s linear infinite;	
+	
+}
+
+
+.text-scrolling p {
+	
+  font-size: 100px;
+  text-align: left;
+  margin-left: -100%;
+  position: absolute;
+  overflow: hidden;
+  animation: desplazar 10s linear infinite; 
+}
+
+
+img {
+	
+    max-width: 100%;
+    height: auto;
+}
+.gallery {
+	
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-item {
+    flex: 0 0 50%;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+
+	bottom: 0;
+    width: 100%;
+	background:linear-gradient(to right, #BB0FC2, #75EFFF);
+	margin-bottom:20px;
+	text-align: center;
+    color: #FFFFFF;
+	
+}
+
+.circulito { 
+ 
+	
+float: center;
+margin-bottom:200px;	
+
+	
+}
+.circulito img{
+	
+	width: 200px;
+	position: relative;
+    height: auto; 	
+    animation: girar 10s linear infinite;
+}	
+
+
+.parrafo {
+	
+
+  overflow: hidden;
+  padding: 50px 0;
+  text-align: center;	
+  animation: scrollInFromBottom 4s forwards;
+  opacity: 0;
+	
+}
+
+
+.random {
+
+display: block;
+position: fixed;
+animation: randomMovement 5s linear infinite;
+}
+
+
+
+
+
+
+
+/*Responsive mood
+
+
+
+@media only screen and (min-width: 768px) {
+	
+	.wrapper {
+		width: 90%;
+	}
+	
+	
+}
+
+/*
+@media only screen and (max-width: 480px) {
+		header {
+		padding: 10px 0;
+	}
+
+	.logo {
+		margin-left: 180px;
+		float: center;
+	    
+	}
+
+	.logo img {
+		width: 50px;	
+		
+	}
+
+	nav {
+		margin-right: 0px;
+	}
+
+	nav ul li a {
+		padding: 20px 5px;
+	}
+
+	.hero h1 {
+		padding-top: 50px;
+		font-size: 60px;
+	}
+
+	
+	.hero p {
+		padding-top: 15px;
+		font-size: 15px;
+	}
+
+	footer {
+		padding: 10px 0;
+		font-size: 10px;
+	}
+
+	.scroll img {
+        display: none; /* Oculta la imagen cuando se esté viendo desde un dispositivo móvil 
+    }
+}
+ 
+/*
+	
+@media only screen and (max-width: 768px) {
+    .gallery {
+        flex-flow: column nowrap;
+    }
+
+    .gallery-item {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+		header {
+		padding: 15px 0;
+	}
+
+	.logo {
+		margin-left: 110px;
+		float: center;
+	    
+	}
+
+	.logo img {
+		width: 50px;	
+		
+	}
+
+	nav {
+		padding-top: 20px; 
+		margin-right: 0px;
+		display: block;
+		float: center;
+	}
+
+	nav ul li a {
+		padding: 5px 5px;
+		font-size: 16px;
+		padding-left: 25px;
+		
+		
+	}
+
+	.hero h1 {
+		padding-top: 80px;
+		font-size: 45px;
+	}
+
+	
+	.hero p {
+		padding-top: 10px;
+		font-size: 12px;
+	}
+
+	footer {
+		padding: 10px 0;
+		font-size: 8px;
+	}
+
+	.scroll img {
+        display: none; /* Oculta la imagen cuando se esté viendo desde un dispositivo móvil 
+    }
+}
+
+
+
+
+
+
+/*prueba de animación gracias a mi rey*/
+
+/* animacion texto h1 rebote
+
+h1 {
+  animation: text-animation 2s ease-in-out infinite;
+}
+
+
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+	
+
+/*animacion de la img scroll aparece y desaparece loop
+
+@keyframes loop-animation{
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+ /* animación girar */
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Animación sube y se detiene en el scroll
+@keyframes scrollInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+		
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+		
+    }
+	
+	
+}
+
+
+
+@keyframes randomMovement {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    50% {
+        transform: translate(random(-100%, 100%), random(-100%, 100%));
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+
+/* Aqui es la animación de iza a der loop
+@keyframes desplazar {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+} */
+
+
